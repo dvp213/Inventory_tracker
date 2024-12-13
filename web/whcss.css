@@ -1,0 +1,54 @@
+.storeHousesHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.IconButton {
+  width: 100%;
+  border: 0px;
+  border-color: aliceblue;
+  background-color: transparent;
+}
+.IconButton:hover {
+  width: auto;
+  border: 2px solid;
+  border-color: rgb(28, 13, 236);
+  background-color: skyblue;
+  border-radius: 5%;
+  transform: scale(1.03);
+  transition: 0.1s;
+}
+.wareHouseImg {
+  align-items: center;
+  justify-content: center;
+}
+.editbutton {
+  width: 130px;
+}
+.editbutton:hover {
+  width: 130px;
+  transition: 0.5s;
+  transform: scale(1.01);
+  background-color: rgb(238, 241, 27);
+  color: black;
+}
+.editbuttondiv {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.stopButton:focus {
+  background-color: rgb(248, 10, 10);
+  color: whitesmoke;
+}
+.continueButton:focus {
+  background-color: rgb(18, 245, 18);
+  color: black;
+}
+.stopButton {
+  width: 150px;
+}
+.continueButton {
+  width: 150px;
+}

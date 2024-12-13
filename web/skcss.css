@@ -1,0 +1,68 @@
+.iconInCard {
+  font-size: xx-large;
+}
+.cardsFirstTW {
+  padding: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(244, 132, 4, 1) 0%,
+    rgba(212, 244, 19, 1) 100%
+  );
+}
+.cardsFirstTW:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+.totalCard {
+  margin-left: 20px;
+}
+.cardsFirstFW {
+  padding: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(236, 16, 16, 1) 0%,
+    rgba(241, 224, 218, 1) 100%
+  );
+}
+.cardsFirstFW:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+
+.cardsFirstAW {
+  padding: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(72, 227, 10, 1) 0%,
+    rgba(154, 242, 169, 1) 100%
+  );
+}
+.cardsFirstAW:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+.cardsFirstTS {
+  padding: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(3, 19, 238, 1) 0%,
+    rgba(154, 222, 242, 1) 100%
+  );
+}
+.cardsFirstTS:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+.chart {
+  height: 400px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  background: radial-gradient(
+    circle,
+    rgba(215, 216, 232, 1) 0%,
+    rgba(250, 252, 252, 1) 100%
+  );
+}

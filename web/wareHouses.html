@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ware houses</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="./whcss.css" />
+  </head>
+  <body>
+    <!--Ware Houses Start-->
+
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Ware Houses</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <div class="storHeader">
+            <!--Heaer items Start-->
+            <div class="row">
+              <div class="storeHousesHeader text-center">
+                <div class="col-2">
+                  <button
+                    class="IconButton"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <span>
+                      <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span>
+                      <small>Click Here</small>
+                    </span>
+                  </button>
+                </div>
+                <div class="col-4">
+                  <h5>Ware House 01</h5>
+                </div>
+                <div class="col-5">
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar bg-warning" style="width: 65%">
+                      Filled Space : 65%
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1"></div>
+              </div>
+              <!--Header Items End-->
+            </div>
+          </div>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <!--Body Items Start-->
+              <!--Ware house Deatails Start-->
+              <div class="row">
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col">
+                      <div class="text-center wareHouseImg">
+                        <img
+                          src="https://www.lifewire.com/thmb/YBQuRMKxxhx3Zb3uJ1x-QOT6VsM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Maplocation_-5a492a4e482c52003601ea25.jpg"
+                          alt=""
+                          style="height: 200px; width: 200px"
+                        />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="row mt-4">
+                        <div class="col-2 text-center">
+                          <ion-icon name="home-outline"></ion-icon>
+                        </div>
+                        <div class="col-8">
+                          <small><strong>Store ID : </strong> WH0001</small>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-2 text-center">
+                          <ion-icon name="call-outline"></ion-icon>
+                        </div>
+                        <div class="col-8">
+                          <small
+                            ><strong>Contact No : </strong> 065-123-4567</small
+                          >
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-2 text-center">
+                          <ion-icon name="cube-outline"></ion-icon>
+                        </div>
+                        <div class="col-8">
+                          <small
+                            ><strong>Capacity : </strong> 10000 Units</small
+                          >
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-2 text-center">
+                          <ion-icon name="time-outline"></ion-icon>
+                        </div>
+                        <div class="col-8">
+                          <small><strong>Work Hours : </strong> 8 Hours</small>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-2 text-center">
+                          <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="col-8">
+                          <small
+                            ><strong>Address : </strong>No10, Passara Road,
+                            Badulla.</small
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col">
+                      <div class="editbuttondiv">
+                        <button
+                          type="button"
+                          class="btn btn-secondary editbutton"
+                          data-bs-toggle="modal"
+                          data-bs-target="#staticBackdrop"
+                        >
+                          <span>
+                            <ion-icon name="create-outline"></ion-icon>
+                            <small>Edit</small>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--Pop up Start-->
+                    <div
+                      class="modal fade"
+                      id="staticBackdrop"
+                      data-bs-backdrop="static"
+                      data-bs-keyboard="false"
+                      tabindex="-1"
+                      aria-labelledby="staticBackdropLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1
+                              class="modal-title fs-5"
+                              id="staticBackdropLabel"
+                            >
+                              Edit Ware House
+                            </h1>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-floating mb-3">
+                                  <input
+                                    type="email"
+                                    class="form-control"
+                                    id="floatingInput"
+                                    placeholder="name@example.com"
+                                  />
+                                  <label for="floatingInput">Store ID</label>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="form-floating mb-3">
+                                  <input
+                                    type="email"
+                                    class="form-control"
+                                    id="floatingInput"
+                                    placeholder="name@example.com"
+                                  />
+                                  <label for="floatingInput">Contact No</label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-floating mb-3">
+                                  <input
+                                    type="email"
+                                    class="form-control"
+                                    id="floatingInput"
+                                    placeholder="name@example.com"
+                                  />
+                                  <label for="floatingInput">Capacity</label>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="form-floating mb-3">
+                                  <input
+                                    type="email"
+                                    class="form-control"
+                                    id="floatingInput"
+                                    placeholder="name@example.com"
+                                  />
+                                  <label for="floatingInput">Work Hours</label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="form-floating mb-3">
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="floatingInput"
+                                  placeholder="name@example.com"
+                                />
+                                <label for="floatingInput">Address</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-outline-warning"
+                            >
+                              Save Changes
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Pop up End-->
+                  </div>
+                  <div class="row mt-5 text-center">
+                    <div class="stopButtondivstart">
+                      <div class="row">
+                        <div class="col">
+                          <button
+                            type="button "
+                            class="btn btn-outline-danger stopButton text-center"
+                          >
+                            Stop Filling
+                          </button>
+                        </div>
+                        <div class="col">
+                          <button
+                            type="button"
+                            class="btn btn-outline-success continueButton text-center"
+                          >
+                            Continue Filling
+                          </button>
+                          </div>
+                        </div>
+                      </div>
+                      <br />
+                      <br>
+                      <br>
+                      <label>Status : </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <!--Ware house Deatails End-->
+              <div class="row">
+                <div class="headline text-center">
+                  <h5>Inventory Deatails</h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="Table">
+                  <table class="table text-center">
+                    <thead>
+                      <th scope="col">Recived Date</th>
+                      <th scope="col">Product Id</th>
+                      <th scope="col">Product name</th>
+                      <th scope="col">Product Image</th>
+                      <th scope="col">Quantitiy(Pieces)</th>
+                    </thead>
+                    <tbody>
+                      <tr class="table-light">
+                        <td>12.06.2023</td>
+                        <td>P001</td>
+                        <td>Blue Bird Shirt</td>
+                        <td>
+                          <img
+                            src="https://www.beverlystreet.lk/media/catalog/product/cache/1/small_image/320x/040ec09b1e35df139433887a97daa66f/5/5/5541.jpg"
+                            style="height: 30px; width: 30px"
+                          />
+                        </td>
+                        <td>1000</td>
+                      </tr>
+                      <tr class="table-secondary">
+                        <td>12.06.2023</td>
+                        <td>P002</td>
+                        <td>Blue Bird Jeans</td>
+                        <td>
+                          <img
+                            src="https://www.styledbysally.com.au/wp-content/uploads/2018/01/Classic-Blue-Men-Jeans-Pant-Cotton-Slim-Fit-Men-s-Denim-Pants-Stretch-Fashion-Mens-Clothes.jpg"
+                            style="height: 30px; width: 30px"
+                          />
+                        </td>
+                        <td>800</td>
+                      </tr>
+                      <tr class="table-light">
+                        <td>12.06.2023</td>
+                        <td>P003</td>
+                        <td>Yello Crispy T-Shirt</td>
+                        <td>
+                          <img
+                            src="https://5.imimg.com/data5/FW/GT/MY-23375112/men-s-yellow-color-t-shirt.jpg"
+                            style="height: 30px; width: 30px"
+                          />
+                        </td>
+                        <td>650</td>
+                      </tr>
+                      <tr class="table-secondary">
+                        <td>12.06.2023</td>
+                        <td>P004</td>
+                        <td>Black Skirts</td>
+                        <td>
+                          <img
+                            src="https://www.ubuy.com.lk/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNjFmSXpDUW9kMEwuX0FDX1VMMTIzMF8uanBn.jpg"
+                            style="height: 30px; width: 30px"
+                          />
+                        </td>
+                        <td>500</td>
+                      </tr>
+                      <tr class="table-light">
+                        <td>12.06.2023</td>
+                        <td>P005</td>
+                        <td>Red Salvar</td>
+                        <td>
+                          <img
+                            src="https://singlekart.com/wp-content/uploads/2019/11/04-1.jpg"
+                            style="height: 30px; width: 30px"
+                          />
+                        </td>
+                        <td>250</td>
+                      </tr>
+                      <tr class="table-secondary"></tr>
+                      <tr class="table-light"></tr>
+                      <tr class="table-secondary"></tr>
+                    </tbody>
+                  </table>
+                  <div class="freecapasity">
+                    <div class="row">
+                      <div class="text-center">
+                        <h5>Available Free Space :</h5>
+                      </div>
+                      <div>
+                        <label>35%</label>
+                      </div>
+                    </div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-success" style="width: 35%">
+                        35%
+                      </div>
+                    </div>
+                    <br />
+                    <hr />
+                  </div>
+                </div>
+              </div>
+              <!--Body items End-->
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="storHeader">
+            <!--Heaer items Start-->
+            <div class="row">
+              <div class="storeHousesHeader text-center">
+                <div class="col-2">
+                  <button
+                    class="IconButton"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="true"
+                    aria-controls="collapseTwo"
+                  >
+                    <span>
+                      <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span>
+                      <small>Click Here</small>
+                    </span>
+                  </button>
+                </div>
+                <div class="col-4">
+                  <h5>Ware House 02</h5>
+                </div>
+                <div class="col-5">
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 30%">
+                      Filled Space : 30%
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="headline text-center">
+                  <h5>Inventory Deatails</h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="Table">
+                  <table class="table text-center">
+                    <thead>
+                      <th scope="col">Recived Date</th>
+                      <th scope="col">Product Id</th>
+                      <th scope="col">Product name</th>
+                      <th scope="col">Product Image</th>
+                      <th scope="col">Quantitiy(Pieces)</th>
+                    </thead>
+                    <tbody>
+                      <tr class="table-light">
+                        <td>12.06.2023</td>
+                        <td>P001</td>
+                        <td>Blue Bird Shirt</td>
+                        <td>
+                          <img
+                            src="https://www.beverlystreet.lk/media/catalog/product/cache/1/small_image/320x/040ec09b1e35df139433887a97daa66f/5/5/5541.jpg"
+                            style="height: 30px; width: 30px"
+                          />
+                        </td>
+                        <td>1000</td>
+                      </tr>
+                      <tr class="table-secondary">
+                        <td>12.06.2023</td>
+                        <td>P002</td>
+                        <td>Blue Bird Jeans</td>
+                        <td>
+                          <img
+                            src="https://www.styledbysally.com.au/wp-content/uploads/2018/01/Classic-Blue-Men-Jeans-Pant-Cotton-Slim-Fit-Men-s-Denim-Pants-Stretch-Fashion-Mens-Clothes.jpg"
+                            style="height: 30px; width: 30px"
+                          />
+                        </td>
+                        <td>800</td>
+                      </tr>
+                      <tr class="table-light">
+                        <td>12.06.2023</td>
+                        <td>P003</td>
+                        <td>Yello Crispy T-Shirt</td>
+                        <td>
+                          <img
+                            src="https://5.imimg.com/data5/FW/GT/MY-23375112/men-s-yellow-color-t-shirt.jpg"
+                            style="height: 30px; width: 30px"
+                          />
+                        </td>
+                        <td>650</td>
+                      </tr>
+                      <tr class="table-secondary">
+                        <td>12.06.2023</td>
+                        <td>P004</td>
+                        <td>Black Skirts</td>
+                        <td>
+                          <img
+                            src="https://www.ubuy.com.lk/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNjFmSXpDUW9kMEwuX0FDX1VMMTIzMF8uanBn.jpg"
+                            style="height: 30px; width: 30px"
+                          />
+                        </td>
+                        <td>500</td>
+                      </tr>
+                      <tr class="table-light">
+                        <td>12.06.2023</td>
+                        <td>P005</td>
+                        <td>Red Salvar</td>
+                        <td>
+                          <img
+                            src="https://singlekart.com/wp-content/uploads/2019/11/04-1.jpg"
+                            style="height: 30px; width: 30px"
+                          />
+                        </td>
+                        <td>250</td>
+                      </tr>
+                      <tr class="table-secondary"></tr>
+                      <tr class="table-light"></tr>
+                      <tr class="table-secondary"></tr>
+                    </tbody>
+                  </table>
+                  <div class="freecapasity">
+                    <div class="row">
+                      <div class="text-center">
+                        <h5>Available Free Space :</h5>
+                      </div>
+                      <div>
+                        <label>70%</label>
+                      </div>
+                    </div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-success" style="width: 50%">
+                        Free Space : 70%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="storHeader">
+            <!--Heaer items Start-->
+            <div class="row">
+              <div class="storeHousesHeader text-center">
+                <div class="col-2">
+                  <button
+                    class="IconButton"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="true"
+                    aria-controls="collapseThree"
+                  >
+                    <span>
+                      <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span>
+                      <small>Click Here</small>
+                    </span>
+                  </button>
+                </div>
+                <div class="col-4">
+                  <h5>Ware House 03</h5>
+                </div>
+                <div class="col-5">
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar bg-danger" style="width: 90%">
+                      Filled Space : 90%
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="headline text-center">
+                  <h5>Inventory Deatails</h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="Table">
+                  <table class="table text-center">
+                    <thead>
+                      <th scope="col">Recived Date</th>
+                      <th scope="col">Product Id</th>
+                      <th scope="col">Product name</th>
+                      <th scope="col">Product Image</th>
+                      <th scope="col">Quantitiy(Pieces)</th>
+                    </thead>
+                    <tbody>
+                      <tr class="table-light">
+                        <td>12.06.2023</td>
+                        <td>P001</td>
+                        <td>Blue Bird Shirt</td>
+                        <td>
+                          <img
+                            src="https://www.beverlystreet.lk/media/catalog/product/cache/1/small_image/320x/040ec09b1e35df139433887a97daa66f/5/5/5541.jpg"
+                            style="height: 30px; width: 30px"
+                          />
+                        </td>
+                        <td>1000</td>
+                      </tr>
+                      <tr class="table-secondary">
+                        <td>12.06.2023</td>
+                        <td>P002</td>
+                        <td>Blue Bird Jeans</td>
+                        <td>
+                          <img
+                            src="https://www.styledbysally.com.au/wp-content/uploads/2018/01/Classic-Blue-Men-Jeans-Pant-Cotton-Slim-Fit-Men-s-Denim-Pants-Stretch-Fashion-Mens-Clothes.jpg"
+                            style="height: 30px; width: 30px"
+                          />
+                        </td>
+                        <td>800</td>
+                      </tr>
+                      <tr class="table-light">
+                        <td>12.06.2023</td>
+                        <td>P003</td>
+                        <td>Yello Crispy T-Shirt</td>
+                        <td>
+                          <img
+                            src="https://5.imimg.com/data5/FW/GT/MY-23375112/men-s-yellow-color-t-shirt.jpg"
+                            style="height: 30px; width: 30px"
+                          />
+                        </td>
+                        <td>650</td>
+                      </tr>
+                      <tr class="table-secondary">
+                        <td>12.06.2023</td>
+                        <td>P004</td>
+                        <td>Black Skirts</td>
+                        <td>
+                          <img
+                            src="https://www.ubuy.com.lk/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNjFmSXpDUW9kMEwuX0FDX1VMMTIzMF8uanBn.jpg"
+                            style="height: 30px; width: 30px"
+                          />
+                        </td>
+                        <td>500</td>
+                      </tr>
+                      <tr class="table-light">
+                        <td>12.06.2023</td>
+                        <td>P005</td>
+                        <td>Red Salvar</td>
+                        <td>
+                          <img
+                            src="https://singlekart.com/wp-content/uploads/2019/11/04-1.jpg"
+                            style="height: 30px; width: 30px"
+                          />
+                        </td>
+                        <td>250</td>
+                      </tr>
+                      <tr class="table-secondary"></tr>
+                      <tr class="table-light"></tr>
+                      <tr class="table-secondary"></tr>
+                    </tbody>
+                  </table>
+                  <div class="freecapasity">
+                    <div class="row">
+                      <div class="text-center">
+                        <h5>Available Free Space :</h5>
+                      </div>
+                      <div>
+                        <label>10%</label>
+                      </div>
+                    </div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-success"
+                        style="width: 10%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Ware Houses End-->
+    <div class="row text-center">
+      <!-- Button trigger modal -->
+      <div class="col mb-3">
+<button type="button" class="btn btn-outline-success" style="width: 300px;" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+ + ADD Ware House
+</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Add New Warehouse</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Store ID</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Contact No</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Capacity</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Work Hours</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Address</label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-success">Add WareHouse</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </body>
+</html>
